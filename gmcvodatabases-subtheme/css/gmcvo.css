@@ -101,6 +101,10 @@
 		border: none;
 	}
 
+	.header-logo img{
+		object-fit: contain;
+	}
+
 /* Responsive page alignments */
 
 	.node-type-page .main #content .container .row .col-md-12 #drupal_tabs, 
@@ -110,7 +114,8 @@
 	.page-node #content .alert, 
 	#header .header-nav-main, 
 	#header .header-nav,
-	#header .header-row:nth-child(2){
+	#header .header-row:nth-child(2), 
+	#header .header-column:nth-child(1){
 		max-width: 940px;
 		margin-right: auto;
 		margin-left: auto;
@@ -125,7 +130,8 @@
 		.page-node #content .alert, 
 		#header .header-nav-main, 
 		#header .header-nav,
-		#header .header-row:nth-child(2){
+		#header .header-row:nth-child(2), 
+		#header .header-column:nth-child(1){
 			max-width: 728px;
 		}
 	}
@@ -139,7 +145,8 @@
 		.page-node #content .alert, 
 		#header .header-nav-main, 
 		#header .header-nav,
-		#header .header-row:nth-child(2){
+		#header .header-row:nth-child(2), 
+		#header .header-column:nth-child(1){
 			max-width: none;
 		}
 	}

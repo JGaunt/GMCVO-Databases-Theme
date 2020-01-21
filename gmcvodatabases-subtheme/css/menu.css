@@ -3,11 +3,33 @@
 	padding: 0;
 }
 
-#header .header-column{
-	display: flex;
-	width: 100%;
-}
 
-#header .header-column:nth-child(2){
-	background-color: #000;
+@media (min-width: 992px){
+	
+	#header .header-column:nth-child(2){
+		background-color: #000;
+	}
+
+	#header .header-column{
+		display: flex;
+		width: 100%;
+	}
+
+	#header .header-nav-main{
+		margin: 0;
+	}
+
+	#header ul.nav-pills li a{
+		color: #fff;
+		padding: 15px !important;
+		border-radius: 0 !important;
+	}
+
+	#header ul.nav-pills li a:hover{
+		background-color: #5d5d5d!important;
+	}
+
+	#header ul.nav-pills li.active a{
+		background-color: #7f7f7f;
+	}
 }
