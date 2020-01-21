@@ -5,6 +5,7 @@ Only tested with the Porto theme currently.
 
 Version 1.01
 - Menu styling using TB megamenu
+- Made logo object-fit:contain to prevent distortion
 
 Version 1.0 - 17/01/2020
 - Start of project
