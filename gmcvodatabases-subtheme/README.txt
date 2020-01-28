@@ -170,8 +170,9 @@ Homepage 1: Two Call to Actions with Images
 
 
 
+News Page 1: Banner with featured content overlay
 
-
+	Help: This block is made up of a view. To get this to work, you will need a view of articles that has the fields Image, Title and the date posted. An image or video needs to be put into the header of the view. 
 
 
 

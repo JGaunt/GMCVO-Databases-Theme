@@ -105,6 +105,10 @@
 		object-fit: contain;
 	}
 
+	.main .page-header{
+		display: none;
+	}
+
 /* Responsive page alignments */
 
 	.node-type-page .main #content .container .row .col-md-12 #drupal_tabs, 
