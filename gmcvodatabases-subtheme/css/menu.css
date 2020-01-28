@@ -1,0 +1,45 @@
+#header .header-container{
+	width: 100%;
+	padding: 0;
+}
+
+
+@media (min-width: 992px){
+	
+	#header .header-column:nth-child(2){
+		background-color: #000;
+	}
+
+	#header .header-column{
+		display: flex;
+		width: 100%;
+	}
+
+	#header .header-nav-main{
+		margin: 0;
+	}
+
+	#header .header-nav-main ul.nav-pills li a{
+		color: #fff;
+		padding: 15px !important;
+		border-radius: 0 !important;
+	}
+
+	#header .header-nav-main ul.nav-pills li a:hover{
+	}
+
+	#header .header-nav-main ul.nav-pills li.active a{
+		background-color: #7f7f7f;
+	}
+
+	#header .header-nav-main nav > ul > li.open > a, #header .header-nav-main nav > ul > li:hover > a {
+     	background: #5d5d5d !important;
+	}
+     #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a {
+     	background-color: #f4f4f4;
+    }
+
+    #header .header-nav-main nav > ul > li > a.dropdown-toggle:after {
+    	border-color: #fff transparent transparent transparent !important;
+	}
+}

@@ -8,6 +8,8 @@ base theme = porto
 ; Call style sheets.
 stylesheets[all][] = css/gmcvo.css
 stylesheets[all][] = css/blocks.css
+stylesheets[all][] = css/menu.css
+stylesheets[all][] = css/views.css
 
 ; Define theme block regions.
 regions[header_top] = Header Top

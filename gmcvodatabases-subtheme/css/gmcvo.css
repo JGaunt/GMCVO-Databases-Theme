@@ -96,13 +96,30 @@
 		margin-bottom: 0;
 	}
 
+	#header .header-body{
+		padding: 0;
+		border: none;
+	}
+
+	.header-logo img{
+		object-fit: contain;
+	}
+
+	.main .page-header{
+		display: none;
+	}
+
 /* Responsive page alignments */
 
 	.node-type-page .main #content .container .row .col-md-12 #drupal_tabs, 
 	.page-node .body .main #content .col-md-12 #first-time, 
 	.not-logged-in.page-admin .main #content .col-md-12 .content, 
 	.page-user .main #content .row, 
-	.page-node #content .alert{
+	.page-node #content .alert, 
+	#header .header-nav-main, 
+	#header .header-nav,
+	#header .header-row:nth-child(2), 
+	#header .header-column:nth-child(1){
 		max-width: 940px;
 		margin-right: auto;
 		margin-left: auto;
@@ -114,7 +131,11 @@
 		.node-type-page .main #content .container .row .col-md-12 #first-time, 
 		.not-logged-in.page-admin .main #content .col-md-12 .content, 
 		.page-user .main #content .row, 
-		.page-node #content .alert{
+		.page-node #content .alert, 
+		#header .header-nav-main, 
+		#header .header-nav,
+		#header .header-row:nth-child(2), 
+		#header .header-column:nth-child(1){
 			max-width: 728px;
 		}
 	}
@@ -125,7 +146,11 @@
 		.node-type-page .main #content .container .row .col-md-12 #first-time, 
 		.not-logged-in.page-admin .main #content .col-md-12 .content, 
 		.page-user .main #content .row, 
-		.page-node #content .alert{
+		.page-node #content .alert, 
+		#header .header-nav-main, 
+		#header .header-nav,
+		#header .header-row:nth-child(2), 
+		#header .header-column:nth-child(1){
 			max-width: none;
 		}
 	}
