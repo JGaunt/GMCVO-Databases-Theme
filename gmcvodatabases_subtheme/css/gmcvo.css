@@ -1,0 +1,213 @@
+/*=======================================================================
+*** GMCVO STYLE SHEET***
+========================================================================*/
+
+/* Fonts */
+	
+	@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+	
+	@font-face {
+	    font-family: 'Brandon Grotesque Regular Italic';
+	    font-style: normal;
+	    font-weight: normal;
+	    src: local('Brandon Grotesque Regular Italic'), url('fonts/brandon-grotesque-regular-italic-58a8a456c4724.woff') format('woff');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Thin Italic';
+	    font-style: normal;
+	    font-weight: normal;
+	    src: local('Brandon Grotesque Thin Italic'), url('fonts/brandon-grotesque-thin-italic-58a8a3a8861fe.woff') format('woff');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Light';
+	    font-style: normal;
+	    font-weight: normal;
+	    src: local('Brandon Grotesque Light'), url('fonts/brandon-grotesque-light-58a8a4b38001d.woff') format('woff');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Light Italic';
+	    font-style: normal;
+	    font-weight: normal;
+	    src: local('Brandon Grotesque Light Italic'), url('fonts/brandon-grotesque-light-italic-58a8a4ccb88be.woff') format('woff');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Medium Italic';
+	    font-style: normal;
+	    font-weight: normal;
+	    src: local('Brandon Grotesque Medium Italic'), url('fonts/brandon-grotesque-medium-italic-58a8a3c40866a.woff') format('woff');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Bold Italic';
+	    font-style: normal;
+	    font-weight: normal;
+	    src: local('Brandon Grotesque Bold Italic'), url('fonts/brandon-grotesque-bold-italic-58a8a48221563.woff') format('woff');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Black';
+	    font-style: normal;
+	    font-weight: normal;
+	    src: local('Brandon Grotesque Black'), url('fonts/brandon-grotesque-black-58a8a3e824392.woff') format('woff');
+	}
+	@font-face{
+		font-family: 'Brandon Grotesque Bold';
+		font-style: normal;
+		font-weight: normal;
+		src: local('Brandon Grotesque Bold'), url('fonts/brandon-grotesque-bold-587bd6400afd0.otf') format('otf');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Medium';
+	    src:url('fonts/brandon-grotesque-medium-587bd623e472a.otf');
+	}
+	@font-face {
+	    font-family: 'Brandon Grotesque Thin';
+	    src:url('fonts/brandon-grotesque-thin-587bd5b76cfba.otf');
+	}
+
+
+/* General */
+
+	.body, .main, .html, #content .row, #content .container{
+		z-index: -1;
+		position: relative;
+	}
+	.main #content.full .container{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	p{
+		font-family: Lato, "Open Sans", Arial, sans-serif;
+		font-size: 22px;
+		line-height: 35px;
+	}
+
+	a{
+		font-family: 'Brandon Grotesque Medium', sans-serif;
+
+	}
+
+	h3{
+		margin-bottom: 20px;
+	}
+
+	.main .container .content h1, .main .region-before-content h1{
+		font-size: 50px;
+		line-height: 57px;
+		font-weight: 700;
+		margin-top: 30px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	#header .header-body{
+		padding: 0;
+		border: none;
+	}
+
+	.header-logo img{
+		object-fit: contain;
+	}
+
+	.main .page-header{
+		display: none;
+	}
+
+	#footer{
+		margin-top: 0;
+	}
+
+	.col-md-3{
+		z-index: -1;
+	}
+
+	.region-sidebar-right{
+		z-index: -1;
+		position: relative;
+	}
+
+/* Responsive page alignments */
+
+	.node-type-page .main #content .container .row .col-md-12 #drupal_tabs, 
+	.page-node .body .main #content .col-md-12 #first-time, 
+	.not-logged-in.page-admin .main #content .col-md-12 .content, 
+	.page-user .main #content .row, 
+	.page-node #content .alert, 
+	#header .header-nav-main, 
+	#header .header-nav,
+	#header .header-row:nth-child(2), 
+	#header .header-column:nth-child(1),
+	#content .container{
+		max-width: 940px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.node-type-page .main #content .container .row{
+		display: flex;
+	}
+
+	.node-type-page .main #content .container .row .col-md-9{
+		float: none;
+		flex: 4;
+	}
+
+	.node-type-page .main #content .container .row .col-md-3{
+		float: none;
+		flex: 2;
+	}
+
+	@media (max-width: 991px){
+
+		.node-type-page .main #content .container .row .col-md-12 #drupal_tabs, 
+		.node-type-page .main #content .container .row .col-md-12 #first-time, 
+		.not-logged-in.page-admin .main #content .col-md-12 .content, 
+		.page-user .main #content .row, 
+		.page-node #content .alert, 
+		#header .header-nav-main, 
+		#header .header-nav,
+		#header .header-row:nth-child(2), 
+		#header .header-column:nth-child(1),
+		#content .container{
+			max-width: 728px;
+		}
+	}
+
+	@media (max-width: 479px){
+
+		.node-type-page .main #content .container .row .col-md-12 #drupal_tabs, 
+		.node-type-page .main #content .container .row .col-md-12 #first-time, 
+		.not-logged-in.page-admin .main #content .col-md-12 .content, 
+		.page-user .main #content .row, 
+		.page-node #content .alert, 
+		#header .header-nav-main, 
+		#header .header-nav,
+		#header .header-row:nth-child(2), 
+		#header .header-column:nth-child(1),
+		#content .container{
+			max-width: none;
+		}
+	}
+
+
+/* Basic Page */
+
+	.node-type-page .main #content .container .row .col-md-12 .region-content #block-system-main{
+		max-width: 940px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	@media (max-width: 991px){
+
+		.node-type-page .main #content .container .row .col-md-12 .region-content #block-system-main{
+			max-width: 728px;
+		}
+	}
+
+	@media (max-width: 479px){
+
+		.node-type-page .main #content .container .row .col-md-12 .region-content #block-system-main{
+			max-width: none;
+		}
+	}
