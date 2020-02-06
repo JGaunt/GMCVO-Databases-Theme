@@ -66,10 +66,6 @@
 
 /* General */
 
-	.body, .main, .html, #content .row, #content .container{
-		z-index: -1;
-		position: relative;
-	}
 	.main #content.full .container{
 		width: 100%;
 		padding-left: 0;
@@ -80,6 +76,7 @@
 		font-family: Lato, "Open Sans", Arial, sans-serif;
 		font-size: 22px;
 		line-height: 35px;
+		text-align: justify;
 	}
 
 	a{
@@ -118,12 +115,8 @@
 	}
 
 	.col-md-3{
-		z-index: -1;
-	}
-
-	.region-sidebar-right{
-		z-index: -1;
-		position: relative;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 /* Responsive page alignments */
@@ -143,19 +136,6 @@
 		margin-left: auto;
 	}
 
-	.node-type-page .main #content .container .row{
-		display: flex;
-	}
-
-	.node-type-page .main #content .container .row .col-md-9{
-		float: none;
-		flex: 4;
-	}
-
-	.node-type-page .main #content .container .row .col-md-3{
-		float: none;
-		flex: 2;
-	}
 
 	@media (max-width: 991px){
 

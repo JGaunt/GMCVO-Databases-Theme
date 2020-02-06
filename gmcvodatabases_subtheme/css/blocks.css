@@ -227,7 +227,6 @@
 		background-image: url('/sites/default/files/sidebar.jpg');
 		background-size: cover;
 		background-position: center;
-		z-index: -2;
 	}
 
 	.sidebar-1:after{
@@ -250,7 +249,7 @@
 	}
 
 	.sidebar-1 .content p{
-		padding: 20px 40px;
+		padding: 20px 10px;
 		margin: 0;
 		position: relative;
 		z-index: 1;
@@ -269,10 +268,12 @@
 		color: #fff;
 		letter-spacing: 4px;
 		font-size: 30px;
-		padding: 50px 50px 20px 40px;
+		padding: 50px 10px 20px 10px;
 		position: relative;
 		z-index: 1;
 	}
+
+/* Buttons-1 */
 
 	.buttons-1 .content{
 		padding-top: 50px;
@@ -336,4 +337,22 @@
 	.buttons-1 .content p:nth-child(4n+3) a:hover{
 		box-shadow: 0 0 0 0 #fff, inset 0 0 0 0 #fff;
 		background:linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+	}
+
+	@media (max-width: 700px){
+		.buttons-1 .content p a{
+			width: 95%;
+		}
+	}
+
+	@media (max-width: 490px){
+		.buttons-1 .content p{
+			display: flex;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.buttons-1 .content a{
+			width: 100%;
+		}
 	}
